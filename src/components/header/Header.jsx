@@ -9,7 +9,7 @@ export function Header() {
     <header>
       <nav>
         <ul>
-          <li class="order0">
+          <li>
             <a href="/" class={url == "/" && "active"}>
               <img src={logo} alt="logo" />
             </a>

@@ -25,6 +25,18 @@ body {
 	box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+section {
+	max-width: 1200px;
+	margin: 0 auto 5rem auto;
+	padding: 0 1rem;
+}
+
 .order1 {
 	order: 1;
 }
@@ -35,10 +47,4 @@ body {
 
 .order-1 {
 	order: -1;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
 }
