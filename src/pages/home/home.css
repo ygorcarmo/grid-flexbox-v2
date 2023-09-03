@@ -116,6 +116,29 @@ figcaption a {
     color: var(--color8);
 }
 
+#donut img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#donut ul {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+#donut a {
+    color: var(--color2);
+}
+
+#donut a:hover {
+    text-decoration: none;
+}
+
+.d3 {
+    grid-row: 1/2;
+}
+
 @media(min-width:550px) {
     .missiontext {
         display: flow-root;
@@ -150,6 +173,31 @@ figcaption a {
     figure img {
         object-position: 0;
     }
+
+    .colspan2 {
+        grid-column: span 2;
+    }
+
+    .colspan3 {
+        grid-column: span 3;
+    }
+
+    .rowspan2 {
+        grid-row: span 2;
+    }
+
+    .rowspan3 {
+        grid-row: span 3;
+    }
+
+    .rowspan2 figure {
+        max-height: unset;
+    }
+
+    /* for some reason, the figures don't always fill their LI container. This keeps them evenly sized */
+    figure {
+        height: 100%;
+    }
 }
 
 @media(min-width: 800px) {
@@ -163,5 +211,52 @@ figcaption a {
 
     #popular li:last-child figure img {
         object-position: 0;
+    }
+
+    #donut ul {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+
+    .d1 {
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+
+    .d2 {
+        grid-column: 1/2;
+        grid-row: 4/6;
+    }
+
+    .d3 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .d4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .d5 {
+        grid-column: 2/3;
+        grid-row: 3/6;
+    }
+
+    .d3 img,
+    .author {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .d3 img {
+        opacity: 0.2;
+    }
+
+    .author {
+        padding: 1rem;
+        z-index: 1000;
     }
 }

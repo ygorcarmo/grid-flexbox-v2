@@ -98,6 +98,13 @@ figcaption a {
 	order: -1;
 }
 
+#comingsoon {
+	display: grid;
+	align-items: center;
+	text-align: center;
+	height: 50vh;
+}
+
 @media(min-width:550px) {
 	section ul {
 		display: flex;

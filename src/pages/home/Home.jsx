@@ -19,6 +19,12 @@ import music from "../../assets/music.jpg";
 import vehicles from "../../assets/vehicles.jpg";
 import landscape from "../../assets/landscape.jpg";
 
+import donout1 from "../../assets/donut1.jpg";
+import donout2 from "../../assets/donut2.jpg";
+import donout3 from "../../assets/donut3.jpg";
+import donout4 from "../../assets/donut4.jpg";
+import donout5 from "../../assets/donut5.jpg";
+
 export function Home() {
   return (
     <div class="home">
@@ -154,6 +160,49 @@ export function Home() {
                 <a href="#">Landscape</a>
               </figcaption>
             </figure>
+          </li>
+        </ul>
+      </section>
+      <section id="donut">
+        <h2>Sharon McCutcheon: Donut Love</h2>
+        <ul>
+          <li class="d1">
+            <img src={donout5} alt="Donut with sprinkles." />
+          </li>
+          <li class="d2">
+            <img src={donout1} alt="Donut with sprinkles." />
+          </li>
+          <li class="d3">
+            <div class="author">
+              <h3>About Sharon McCutcheon</h3>
+              <p>
+                Sharon McCutcheon specializes in LGBTQIA+ themes, stock photos,
+                macro images, backgrounds, and colorful visuals. She currently
+                works as a stock photographer for &nbsp;
+                <a href="https://www.pexels.com/@mccutcheon" target="_blank">
+                  Pexels
+                </a>
+                &nbsp; and &nbsp;
+                <a
+                  href="https://unsplash.com/@sharonmccutcheon"
+                  target="_blank"
+                >
+                  Unsplash
+                </a>
+                &nbsp; and sells additional photos at &nbsp;
+                <a href="https://www.eyeem.com/u/mccutcheon" target="_blank">
+                  EyeEm
+                </a>
+                .
+              </p>
+            </div>
+            <img src={donout2} alt="Donut with sprinkles." />
+          </li>
+          <li class="d4">
+            <img src={donout3} alt="Donut with sprinkles." />
+          </li>
+          <li class="d5">
+            <img src={donout4} alt="Donut with sprinkles." />
           </li>
         </ul>
       </section>

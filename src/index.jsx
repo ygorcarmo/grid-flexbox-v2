@@ -6,6 +6,7 @@ import { Home } from "./pages/home/Home.jsx";
 import { NotFound } from "./pages/_404.jsx";
 import "./style.css";
 import { Footer } from "./components/footer/Footer.jsx";
+import ComingSoon from "./components/ComingSoon.jsx";
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
         <Router>
           <Route path="/" component={Home} />
           <Route default component={NotFound} />
+          <Route path="coming-soon" component={ComingSoon} />
         </Router>
       </main>
       <Footer />

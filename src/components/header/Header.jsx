@@ -15,16 +15,16 @@ export function Header() {
             </a>
           </li>
           <li class="order-1">
-            <a href="/">Collections</a>
+            <a href="/coming-soon">Collections</a>
           </li>
           <li class="order-1">
-            <a href="/">About</a>
+            <a href="/coming-soon">About</a>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <a href="/coming-soon">Contact</a>
           </li>
           <li>
-            <a href="/">Donate</a>
+            <a href="/coming-soon">Donate</a>
           </li>
         </ul>
       </nav>
